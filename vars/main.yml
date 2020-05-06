@@ -1,7 +1,7 @@
 ---
 
 # Name of user which will be created on server
-user: melihovv
+user: vagrant
 
 # User password
 password: $6$kgX6rY4/$EOL3Q50Yt8DbriTsqNZpWGVCSSibUVJIaS1BnCadVknfN8.1XXr1MCdkvEbnfS6x7xfYYSghbH7uS.JIXzIy./
@@ -16,7 +16,7 @@ email: example@example.com
 timezone: 'Europe/Moscow'
 
 # Domain of your site
-domain: example.com
+domain: ITS-UrlShortener
 
 # Where site will be located
 domain_path: "/var/www/{{ domain }}"
@@ -31,7 +31,7 @@ current_dir: "{{ domain_path }}/current"
 persistent_dir: "{{ domain_path }}/persistent"
 
 # Link to your git repository of your site
-repo_url: https://github.com/melihovv/laravel-starter-kit.git
+repo_url: https://github.com/hilmiraditya/ITS-UrlShortener.git
 
 # Run migrations
 migrate: true
