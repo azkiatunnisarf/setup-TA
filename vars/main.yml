@@ -73,8 +73,8 @@ swapfile_size: 1GB
 nodejs_npm_global_packages:
   - name: yarn
 
-mysql_user_name: root
-mysql_user_password: root
+# mysql_user_name: root
+# mysql_user_password: root
 
 # Mysql user name and password
 # More info at https://github.com/geerlingguy/ansible-role-mysql
