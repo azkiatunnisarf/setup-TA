@@ -8,12 +8,13 @@ password: $6$kgX6rY4/$EOL3Q50Yt8DbriTsqNZpWGVCSSibUVJIaS1BnCadVknfN8.1XXr1MCdkvE
 
 # Public key to copy to remote server
 public_key: ~/.ssh/id_rsa.pub
+# public_key: ~/.ssh/authorized_keys
 
 # Email to which letsencrypt will send notifications
 email: example@example.com
 
 # Timezone to set on server
-timezone: 'Europe/Moscow'
+timezone: 'Asia/Jakarta'
 
 # Domain of your site
 domain: ITS-UrlShortener
@@ -31,7 +32,7 @@ current_dir: "{{ domain_path }}/current"
 persistent_dir: "{{ domain_path }}/persistent"
 
 # Link to your git repository of your site
-repo_url: https://github.com/hilmiraditya/ITS-UrlShortener.git
+repo_url: https://github.com/azkiatunnisarf/URL-Shortener-ITS.git
 
 # Run migrations
 migrate: true

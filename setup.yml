@@ -19,19 +19,19 @@
     - name: fail2ban
       tags: fail2ban
 
-    - name: kamaln7.swapfile
+    - name: oefenweb.swapfile
       tags: swapfile
       become: true
 
-    - name: certbot
-      tags: ssl
+    # - name: certbot
+    #   tags: ssl
 
-    - name: ssl
-      tags: ssl
+    # - name: ssl
+    #   tags: ssl
 
-    - name: geerlingguy.nodejs
-      tags: nodejs
-      become: true
+    # - name: geerlingguy.nodejs
+    #   tags: nodejs
+    #   become: true
 
     - name: nginx
       tags: nginx
