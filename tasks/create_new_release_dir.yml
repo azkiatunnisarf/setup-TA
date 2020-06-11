@@ -6,4 +6,5 @@
     state: directory
     owner: "{{ user }}"
     group: "{{ user }}"
+    force: yes
   become: true

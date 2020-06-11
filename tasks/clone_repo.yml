@@ -4,7 +4,7 @@
   git:
     dest: "{{ new_release_dir }}"
     repo: "{{ repo_url }}"
-    update: no
+    update: yes
   become: true
 
 - name: Configure sparse checkout
