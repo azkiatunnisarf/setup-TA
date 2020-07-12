@@ -573,3 +573,347 @@ when attempting to call Galaxy at 'https://galaxy.ansible.com/api/': ('The read
 operation timed out',)
 
 2020-06-08 13:23:35,435 p=24974 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-07-11 18:14:27,064 p=1974 u=root n=ansible | [WARNING]: - oefenweb.swapfile (v2.0.28) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:14:27,066 p=1974 u=root n=ansible | [WARNING]: - geerlingguy.composer (1.7.6) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:14:27,072 p=1974 u=root n=ansible | [WARNING]: - geerlingguy.mysql (3.1.0) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:14:27,884 p=2007 u=root n=ansible | [WARNING]: Error in vault password prompt (default): EOFError (ctrl-d) on
+prompt for (default)
+
+2020-07-11 18:14:27,884 p=2007 u=root n=ansible | ERROR! EOFError (ctrl-d) on prompt for (default)
+2020-07-11 18:19:44,764 p=21272 u=root n=ansible | [WARNING]: - oefenweb.swapfile (v2.0.28) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:19:44,766 p=21272 u=root n=ansible | [WARNING]: - geerlingguy.composer (1.7.6) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:19:44,767 p=21272 u=root n=ansible | [WARNING]: - geerlingguy.mysql (3.1.0) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:19:46,332 p=21406 u=root n=ansible | PLAY [all] *********************************************************************
+2020-07-11 18:19:46,399 p=21406 u=root n=ansible | TASK [Check if user specified in config is installed] **************************
+2020-07-11 18:19:46,400 p=21406 u=root n=ansible | Saturday 11 July 2020  18:19:46 +0700 (0:00:00.105)       0:00:00.105 ********* 
+2020-07-11 18:19:46,569 p=21406 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: root@localhost: Permission denied (publickey,password).", "unreachable": true}
+2020-07-11 18:19:46,572 p=21406 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-07-11 18:19:46,572 p=21406 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-11 18:19:46,572 p=21406 u=root n=ansible | Saturday 11 July 2020  18:19:46 +0700 (0:00:00.172)       0:00:00.278 ********* 
+2020-07-11 18:19:46,572 p=21406 u=root n=ansible | =============================================================================== 
+2020-07-11 18:19:46,573 p=21406 u=root n=ansible | Check if user specified in config is installed -------------------------- 0.17s
+2020-07-11 18:21:09,261 p=26660 u=root n=ansible | [WARNING]: - oefenweb.swapfile (v2.0.28) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:21:09,263 p=26660 u=root n=ansible | [WARNING]: - geerlingguy.composer (1.7.6) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:21:09,264 p=26660 u=root n=ansible | [WARNING]: - geerlingguy.mysql (3.1.0) is already installed - use --force to
+change version to unspecified
+
+2020-07-11 18:21:10,145 p=26683 u=root n=ansible | PLAY [all] *********************************************************************
+2020-07-11 18:21:10,163 p=26683 u=root n=ansible | TASK [Check if user specified in config is installed] **************************
+2020-07-11 18:21:10,163 p=26683 u=root n=ansible | Saturday 11 July 2020  18:21:10 +0700 (0:00:00.034)       0:00:00.034 ********* 
+2020-07-11 18:21:11,595 p=26683 u=root n=ansible | fatal: [10.199.16.58]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "10.199.16.58", "echo ok"], "delta": "0:00:00.463484", "end": "2020-07-11 18:21:11.559841", "msg": "non-zero return code", "rc": 255, "start": "2020-07-11 18:21:11.096357", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-11 18:21:11,595 p=26683 u=root n=ansible | ...ignoring
+2020-07-11 18:21:11,603 p=26683 u=root n=ansible | TASK [Install python2] *********************************************************
+2020-07-11 18:21:11,603 p=26683 u=root n=ansible | Saturday 11 July 2020  18:21:11 +0700 (0:00:01.440)       0:00:01.474 ********* 
+2020-07-11 18:21:11,650 p=26683 u=root n=ansible | fatal: [10.199.16.58]: FAILED! => {"msg": "template error while templating string: no filter named 'success'. String: {{ test_user | success | ternary(omit, 'root') }}"}
+2020-07-11 18:21:11,653 p=26683 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-07-11 18:21:11,653 p=26683 u=root n=ansible | 10.199.16.58               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=1   
+2020-07-11 18:21:11,654 p=26683 u=root n=ansible | Saturday 11 July 2020  18:21:11 +0700 (0:00:00.050)       0:00:01.524 ********* 
+2020-07-11 18:21:11,654 p=26683 u=root n=ansible | =============================================================================== 
+2020-07-11 18:21:11,654 p=26683 u=root n=ansible | Check if user specified in config is installed -------------------------- 1.44s
+2020-07-11 18:21:11,654 p=26683 u=root n=ansible | Install python2 --------------------------------------------------------- 0.05s
+2020-07-11 20:28:35,276 p=26718 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-11 20:28:35,774 p=26718 u=user |  PLAY [all] *********************************************************************
+2020-07-11 20:28:35,789 p=26718 u=user |  TASK [Check if user specified in config is installed] **************************
+2020-07-11 20:28:35,789 p=26718 u=user |  Saturday 11 July 2020  20:28:35 +0700 (0:00:00.039)       0:00:00.039 ********* 
+2020-07-11 20:28:36,466 p=26718 u=user |  fatal: [10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "10.199.16.58", "echo ok"], "delta": "0:00:00.088862", "end": "2020-07-11 20:28:36.423992", "msg": "non-zero return code", "rc": 255, "start": "2020-07-11 20:28:36.335130", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-11 20:28:36,467 p=26718 u=user |  ...ignoring
+2020-07-11 20:28:36,477 p=26718 u=user |  TASK [Install python2] *********************************************************
+2020-07-11 20:28:36,477 p=26718 u=user |  Saturday 11 July 2020  20:28:36 +0700 (0:00:00.687)       0:00:00.727 ********* 
+2020-07-11 20:28:36,507 p=26718 u=user |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-11 20:28:36,622 p=26718 u=user |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: root@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-11 20:28:36,624 p=26718 u=user |  PLAY RECAP *********************************************************************
+2020-07-11 20:28:36,624 p=26718 u=user |  10.199.16.58               : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-11 20:28:36,625 p=26718 u=user |  Saturday 11 July 2020  20:28:36 +0700 (0:00:00.147)       0:00:00.875 ********* 
+2020-07-11 20:28:36,625 p=26718 u=user |  =============================================================================== 
+2020-07-11 20:28:36,625 p=26718 u=user |  Check if user specified in config is installed -------------------------- 0.69s
+2020-07-11 20:28:36,626 p=26718 u=user |  Install python2 --------------------------------------------------------- 0.15s
+2020-07-11 20:29:48,647 p=30672 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-11 20:29:49,177 p=30672 u=user |  PLAY [all] *********************************************************************
+2020-07-11 20:29:49,193 p=30672 u=user |  TASK [Check if user specified in config is installed] **************************
+2020-07-11 20:29:49,193 p=30672 u=user |  Saturday 11 July 2020  20:29:49 +0700 (0:00:00.040)       0:00:00.040 ********* 
+2020-07-11 20:29:49,812 p=30672 u=user |  fatal: [10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "10.199.16.58", "echo ok"], "delta": "0:00:00.090542", "end": "2020-07-11 20:29:49.771828", "msg": "non-zero return code", "rc": 255, "start": "2020-07-11 20:29:49.681286", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-11 20:29:49,813 p=30672 u=user |  ...ignoring
+2020-07-11 20:29:49,825 p=30672 u=user |  TASK [Install python2] *********************************************************
+2020-07-11 20:29:49,825 p=30672 u=user |  Saturday 11 July 2020  20:29:49 +0700 (0:00:00.632)       0:00:00.673 ********* 
+2020-07-11 20:29:49,855 p=30672 u=user |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-11 20:29:49,965 p=30672 u=user |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: root@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-11 20:29:49,967 p=30672 u=user |  PLAY RECAP *********************************************************************
+2020-07-11 20:29:49,968 p=30672 u=user |  10.199.16.58               : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-11 20:29:49,968 p=30672 u=user |  Saturday 11 July 2020  20:29:49 +0700 (0:00:00.142)       0:00:00.816 ********* 
+2020-07-11 20:29:49,968 p=30672 u=user |  =============================================================================== 
+2020-07-11 20:29:49,969 p=30672 u=user |  Check if user specified in config is installed -------------------------- 0.63s
+2020-07-11 20:29:49,969 p=30672 u=user |  Install python2 --------------------------------------------------------- 0.14s
+2020-07-11 20:30:26,024 p=32751 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-11 20:30:26,412 p=32751 u=user |  10.199.16.58 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:45:49,204 p=3540 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:45:49,961 p=3540 u=user |  PLAY [all] *********************************************************************
+2020-07-12 11:45:49,977 p=3540 u=user |  TASK [Check if user specified in config is installed] **************************
+2020-07-12 11:45:49,977 p=3540 u=user |  Sunday 12 July 2020  11:45:49 +0700 (0:00:00.045)       0:00:00.045 *********** 
+2020-07-12 11:45:50,654 p=3540 u=user |  fatal: [10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "10.199.16.58", "echo ok"], "delta": "0:00:00.088216", "end": "2020-07-12 11:45:50.615717", "msg": "non-zero return code", "rc": 255, "start": "2020-07-12 11:45:50.527501", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-12 11:45:50,654 p=3540 u=user |  ...ignoring
+2020-07-12 11:45:50,665 p=3540 u=user |  TASK [Install python2] *********************************************************
+2020-07-12 11:45:50,665 p=3540 u=user |  Sunday 12 July 2020  11:45:50 +0700 (0:00:00.688)       0:00:00.733 *********** 
+2020-07-12 11:45:50,690 p=3540 u=user |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:45:50,797 p=3540 u=user |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: root@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 11:45:50,800 p=3540 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 11:45:50,800 p=3540 u=user |  10.199.16.58               : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-12 11:45:50,800 p=3540 u=user |  Sunday 12 July 2020  11:45:50 +0700 (0:00:00.135)       0:00:00.869 *********** 
+2020-07-12 11:45:50,801 p=3540 u=user |  =============================================================================== 
+2020-07-12 11:45:50,801 p=3540 u=user |  Check if user specified in config is installed -------------------------- 0.69s
+2020-07-12 11:45:50,801 p=3540 u=user |  Install python2 --------------------------------------------------------- 0.14s
+2020-07-12 11:46:56,956 p=7456 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:46:57,584 p=7456 u=user |  PLAY [all] *********************************************************************
+2020-07-12 11:46:57,616 p=7456 u=user |  TASK [Check if user specified in config is installed] **************************
+2020-07-12 11:46:57,616 p=7456 u=user |  Sunday 12 July 2020  11:46:57 +0700 (0:00:00.082)       0:00:00.082 *********** 
+2020-07-12 11:46:58,287 p=7456 u=user |  fatal: [user@10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "user@10.199.16.58", "echo ok"], "delta": "0:00:00.091669", "end": "2020-07-12 11:46:58.247997", "msg": "non-zero return code", "rc": 255, "start": "2020-07-12 11:46:58.156328", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-12 11:46:58,288 p=7456 u=user |  ...ignoring
+2020-07-12 11:46:58,298 p=7456 u=user |  TASK [Install python2] *********************************************************
+2020-07-12 11:46:58,298 p=7456 u=user |  Sunday 12 July 2020  11:46:58 +0700 (0:00:00.682)       0:00:00.764 *********** 
+2020-07-12 11:46:58,324 p=7456 u=user |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:46:58,428 p=7456 u=user |  fatal: [user@10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 11:46:58,436 p=7456 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 11:46:58,436 p=7456 u=user |  user@10.199.16.58          : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-12 11:46:58,436 p=7456 u=user |  Sunday 12 July 2020  11:46:58 +0700 (0:00:00.138)       0:00:00.902 *********** 
+2020-07-12 11:46:58,437 p=7456 u=user |  =============================================================================== 
+2020-07-12 11:46:58,437 p=7456 u=user |  Check if user specified in config is installed -------------------------- 0.68s
+2020-07-12 11:46:58,437 p=7456 u=user |  Install python2 --------------------------------------------------------- 0.14s
+2020-07-12 11:47:35,671 p=9623 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:47:36,096 p=9623 u=user |  PLAY [all] *********************************************************************
+2020-07-12 11:47:36,111 p=9623 u=user |  TASK [Check if user specified in config is installed] **************************
+2020-07-12 11:47:36,112 p=9623 u=user |  Sunday 12 July 2020  11:47:36 +0700 (0:00:00.038)       0:00:00.038 *********** 
+2020-07-12 11:47:36,732 p=9623 u=user |  fatal: [user@10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "user@10.199.16.58", "echo ok"], "delta": "0:00:00.086580", "end": "2020-07-12 11:47:36.691763", "msg": "non-zero return code", "rc": 255, "start": "2020-07-12 11:47:36.605183", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-12 11:47:36,732 p=9623 u=user |  ...ignoring
+2020-07-12 11:47:36,742 p=9623 u=user |  TASK [Install python2] *********************************************************
+2020-07-12 11:47:36,742 p=9623 u=user |  Sunday 12 July 2020  11:47:36 +0700 (0:00:00.630)       0:00:00.669 *********** 
+2020-07-12 11:47:36,771 p=9623 u=user |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:47:36,881 p=9623 u=user |  fatal: [user@10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 11:47:36,883 p=9623 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 11:47:36,884 p=9623 u=user |  user@10.199.16.58          : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-12 11:47:36,884 p=9623 u=user |  Sunday 12 July 2020  11:47:36 +0700 (0:00:00.141)       0:00:00.811 *********** 
+2020-07-12 11:47:36,884 p=9623 u=user |  =============================================================================== 
+2020-07-12 11:47:36,885 p=9623 u=user |  Check if user specified in config is installed -------------------------- 0.63s
+2020-07-12 11:47:36,885 p=9623 u=user |  Install python2 --------------------------------------------------------- 0.14s
+2020-07-12 11:48:13,109 p=11772 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:48:13,248 p=11772 u=user |  ERROR! the role 'oefenweb.swapfile' was not found in /home/user/setup-TA/roles:/home/user/.ansible/roles:/etc/ansible/roles:/home/user/setup-TA
+
+The error appears to be in '/home/user/setup-TA/setup.yml': line 22, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: oefenweb.swapfile
+      ^ here
+
+2020-07-12 11:48:59,240 p=14283 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:48:59,375 p=14283 u=user |  ERROR! the role 'geerlingguy.composer' was not found in /home/user/setup-TA/roles:/home/user/.ansible/roles:/etc/ansible/roles:/home/user/setup-TA
+
+The error appears to be in '/home/user/setup-TA/setup.yml': line 44, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: geerlingguy.composer
+      ^ here
+
+2020-07-12 11:49:18,749 p=15377 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:49:19,221 p=15377 u=user |  PLAY [all] *********************************************************************
+2020-07-12 11:49:19,248 p=15377 u=user |  TASK [Gathering Facts] *********************************************************
+2020-07-12 11:49:19,249 p=15377 u=user |  Sunday 12 July 2020  11:49:19 +0700 (0:00:00.067)       0:00:00.067 *********** 
+2020-07-12 11:49:19,369 p=15377 u=user |  fatal: [user@10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 11:49:19,371 p=15377 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 11:49:19,372 p=15377 u=user |  user@10.199.16.58          : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-12 11:49:19,372 p=15377 u=user |  Sunday 12 July 2020  11:49:19 +0700 (0:00:00.123)       0:00:00.190 *********** 
+2020-07-12 11:49:19,372 p=15377 u=user |  =============================================================================== 
+2020-07-12 11:49:19,372 p=15377 u=user |  Gathering Facts --------------------------------------------------------- 0.12s
+2020-07-12 11:49:44,005 p=16957 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:49:44,360 p=16957 u=user |  PLAY [all] *********************************************************************
+2020-07-12 11:49:44,377 p=16957 u=user |  TASK [Gathering Facts] *********************************************************
+2020-07-12 11:49:44,377 p=16957 u=user |  Sunday 12 July 2020  11:49:44 +0700 (0:00:00.043)       0:00:00.043 *********** 
+2020-07-12 11:49:44,502 p=16957 u=user |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 11:49:44,504 p=16957 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 11:49:44,505 p=16957 u=user |  10.199.16.58               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-12 11:49:44,505 p=16957 u=user |  Sunday 12 July 2020  11:49:44 +0700 (0:00:00.127)       0:00:00.171 *********** 
+2020-07-12 11:49:44,505 p=16957 u=user |  =============================================================================== 
+2020-07-12 11:49:44,506 p=16957 u=user |  Gathering Facts --------------------------------------------------------- 0.13s
+2020-07-12 11:50:14,832 p=18681 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:50:15,301 p=18681 u=user |  10.199.16.58 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:50:54,517 p=20812 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:50:55,021 p=20812 u=user |  10.199.16.58 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:51:13,269 p=21913 u=root |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:51:13,661 p=21913 u=root |  10.199.16.58 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@10.199.16.58: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:51:24,214 p=22597 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:51:24,634 p=22597 u=user |  10.199.16.58 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:52:19,639 p=25562 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:52:20,022 p=25562 u=user |  127.0.0.1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ECDSA) to the list of known hosts.\r\nuser@127.0.0.1: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 11:52:58,395 p=27704 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 11:52:58,777 p=27704 u=user |  127.0.0.1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: user@127.0.0.1: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-12 14:07:04,434 p=19508 u=user |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 14:07:05,249 p=19508 u=user |  PLAY [all] *********************************************************************
+2020-07-12 14:07:05,272 p=19508 u=user |  TASK [Gathering Facts] *********************************************************
+2020-07-12 14:07:05,272 p=19508 u=user |  Sunday 12 July 2020  14:07:05 +0700 (0:00:00.080)       0:00:00.080 *********** 
+2020-07-12 14:07:05,418 p=19508 u=user |  fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 14:07:05,421 p=19508 u=user |  PLAY RECAP *********************************************************************
+2020-07-12 14:07:05,421 p=19508 u=user |  127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-12 14:07:05,422 p=19508 u=user |  Sunday 12 July 2020  14:07:05 +0700 (0:00:00.149)       0:00:00.230 *********** 
+2020-07-12 14:07:05,422 p=19508 u=user |  =============================================================================== 
+2020-07-12 14:07:05,422 p=19508 u=user |  Gathering Facts --------------------------------------------------------- 0.15s
+2020-07-12 14:07:30,046 p=21002 u=root |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 14:07:30,504 p=21002 u=root |  PLAY [all] *********************************************************************
+2020-07-12 14:07:30,514 p=21002 u=root |  TASK [Gathering Facts] *********************************************************
+2020-07-12 14:07:30,515 p=21002 u=root |  Sunday 12 July 2020  14:07:30 +0700 (0:00:00.034)       0:00:00.034 *********** 
+2020-07-12 14:07:30,640 p=21002 u=root |  fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ECDSA) to the list of known hosts.\r\nuser@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 14:07:30,641 p=21002 u=root |  PLAY RECAP *********************************************************************
+2020-07-12 14:07:30,641 p=21002 u=root |  127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-12 14:07:30,642 p=21002 u=root |  Sunday 12 July 2020  14:07:30 +0700 (0:00:00.127)       0:00:00.161 *********** 
+2020-07-12 14:07:30,642 p=21002 u=root |  =============================================================================== 
+2020-07-12 14:07:30,642 p=21002 u=root |  Gathering Facts --------------------------------------------------------- 0.13s
+2020-07-12 14:08:26,013 p=24241 u=root |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 14:08:26,584 p=24241 u=root |  PLAY [all] *********************************************************************
+2020-07-12 14:08:26,595 p=24241 u=root |  TASK [Gathering Facts] *********************************************************
+2020-07-12 14:08:26,595 p=24241 u=root |  Sunday 12 July 2020  14:08:26 +0700 (0:00:00.040)       0:00:00.040 *********** 
+2020-07-12 14:08:26,738 p=24241 u=root |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: user@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 14:08:26,741 p=24241 u=root |  PLAY RECAP *********************************************************************
+2020-07-12 14:08:26,741 p=24241 u=root |  10.199.16.58               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-12 14:08:26,742 p=24241 u=root |  Sunday 12 July 2020  14:08:26 +0700 (0:00:00.146)       0:00:00.186 *********** 
+2020-07-12 14:08:26,742 p=24241 u=root |  =============================================================================== 
+2020-07-12 14:08:26,742 p=24241 u=root |  Gathering Facts --------------------------------------------------------- 0.15s
+2020-07-12 19:56:14,100 p=5701 u=root |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-12 19:56:15,017 p=5701 u=root |  PLAY [all] *********************************************************************
+2020-07-12 19:56:15,045 p=5701 u=root |  TASK [Check if user specified in config is installed] **************************
+2020-07-12 19:56:15,046 p=5701 u=root |  Sunday 12 July 2020  19:56:15 +0700 (0:00:00.091)       0:00:00.091 *********** 
+2020-07-12 19:56:16,360 p=5701 u=root |  fatal: [10.199.16.58 -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "10.199.16.58", "echo ok"], "delta": "0:00:00.534551", "end": "2020-07-12 19:56:16.323826", "msg": "non-zero return code", "rc": 255, "start": "2020-07-12 19:56:15.789275", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-07-12 19:56:16,360 p=5701 u=root |  ...ignoring
+2020-07-12 19:56:16,371 p=5701 u=root |  TASK [Install python2] *********************************************************
+2020-07-12 19:56:16,371 p=5701 u=root |  Sunday 12 July 2020  19:56:16 +0700 (0:00:01.325)       0:00:01.416 *********** 
+2020-07-12 19:56:16,394 p=5701 u=root |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-07-12 19:56:16,527 p=5701 u=root |  fatal: [10.199.16.58]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: root@10.199.16.58: Permission denied (publickey,password).", "unreachable": true}
+2020-07-12 19:56:16,530 p=5701 u=root |  PLAY RECAP *********************************************************************
+2020-07-12 19:56:16,530 p=5701 u=root |  10.199.16.58               : ok=1    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=1   
+2020-07-12 19:56:16,531 p=5701 u=root |  Sunday 12 July 2020  19:56:16 +0700 (0:00:00.159)       0:00:01.576 *********** 
+2020-07-12 19:56:16,531 p=5701 u=root |  =============================================================================== 
+2020-07-12 19:56:16,531 p=5701 u=root |  Check if user specified in config is installed -------------------------- 1.33s
+2020-07-12 19:56:16,531 p=5701 u=root |  Install python2 --------------------------------------------------------- 0.16s
