@@ -14,7 +14,7 @@ public_key: ~/.ssh/id_rsa.pub
 email: example@example.com
 
 # Timezone to set on server
-timezone: 'Asia/Jakarta'
+timezone: 'Asia/Makassar'
 
 # Domain of your site
 domain: ITS-UrlShortener
@@ -61,7 +61,7 @@ copy_vendor: true
 # Extra args passed to certbot for certificate generation. Remove `--test-cert`
 # if you don't want to use staging server to obtain sertificate. For more info
 # about these args see https://certbot.eff.org/docs/using.html#certbot-command-line-options
-certbot_extra_args: --standalone --no-eff-email -n --agree-tos --keep --expand  --preferred-challenges tls-sni --test-cert
+#certbot_extra_args: --standalone --no-eff-email -n --agree-tos --keep --expand  --preferred-challenges tls-sni --test-cert
 
 # What to do after certificate was refreshed?
 renew_hook: systemctl reload nginx
@@ -71,8 +71,8 @@ swapfile_size: 1GB
 
 # Which npm packages install globally
 # For more info about available variables see https://github.com/geerlingguy/ansible-role-nodejs
-nodejs_npm_global_packages:
-  - name: yarn
+# nodejs_npm_global_packages:
+#   - name: yarn
 
 # mysql_user_name: root
 # mysql_user_password: root

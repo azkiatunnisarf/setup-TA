@@ -3,7 +3,7 @@
 - name: Install php
   apt:
       pkg: "{{ item }}"
-      state: installed
+      state: latest
       update_cache: yes
   with_items:
     - php7.0-cli

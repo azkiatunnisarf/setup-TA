@@ -8,13 +8,16 @@
 Vagrant.configure("2") do |config|
  
     config.vm.box = "azkiafajriyati/myits20"
-    config.vm.network "forwarded_port", guest: 82, host: 8085, host_ip: "127.0.0.1"
-    # config.vm.network "forwarded_port", guest: 8082, host: 8082, host_ip: "127.0.0.1"
-    # config.vm.network "forwarded_port", guest: 8083, host: 8083, host_ip: "127.0.0.1"
+    config.vm.network "forwarded_port", guest: 80, host: 9000, host_ip: "127.0.0.1"
     config.vm.provision "shell", path: "setup.sh"
     config.vm.provision "init", type: "ansible" do |ansible|
       ansible.playbook = "initial-setup.yml"
-  
+    end
+    config.vm.provision "req", type: "ansible" do |ansible|
+      ansible.galaxy_role_file = 'requirements.yml'
+      ansible.galaxy_roles_path = '/etc/ansible/roles'
+      ansible.galaxy_command = 'ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path}'
+      ansible.playbook = "setup.yml"
     end
     config.vm.provision "setup", type: "ansible" do |ansible|
       
@@ -26,13 +29,7 @@ Vagrant.configure("2") do |config|
       ansible.playbook = "deploy.yml"
   
     end
-    config.vm.provision "req", run: 'always', type: :ansible_local do |ansible|
-      ansible.galaxy_role_file = 'requirements.yml'
-      ansible.galaxy_roles_path = '/etc/ansible/roles'
-      ansible.galaxy_command = 'ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path}'
-      ansible.playbook = "setup.yml"
-      ansible.tags = "user,nginx"
-    end
+    
     config.vm.provision "perm", type: :shell, inline: <<~'EOM'
       sudo chmod 777 ~/.ansible/galaxy_token
     EOM

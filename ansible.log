@@ -573,3 +573,332 @@ when attempting to call Galaxy at 'https://galaxy.ansible.com/api/': ('The read
 operation timed out',)
 
 2020-06-08 13:23:35,435 p=24974 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 15:06:05,341 p=1551 u=vagrant n=ansible | - downloading role 'swapfile', owned by oefenweb
+2020-06-24 15:06:07,895 p=1551 u=vagrant n=ansible | - downloading role from https://github.com/Oefenweb/ansible-swapfile/archive/v2.0.28.tar.gz
+2020-06-24 15:06:09,935 p=1551 u=vagrant n=ansible | - extracting oefenweb.swapfile to /etc/ansible/roles/oefenweb.swapfile
+2020-06-24 15:06:09,936 p=1551 u=vagrant n=ansible | - extracting oefenweb.swapfile to /home/vagrant/.ansible/roles/oefenweb.swapfile
+2020-06-24 15:06:09,939 p=1551 u=vagrant n=ansible | [WARNING]: - oefenweb.swapfile was NOT installed successfully: the specified
+role oefenweb.swapfile appears to already exist. Use --force to replace it.
+
+2020-06-24 15:06:09,940 p=1551 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 23:11:37,822 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:11:45,254 p=6528 u=nisafajriyati |  PLAY [all] *********************************************************************
+2020-06-24 23:11:45,281 p=6528 u=nisafajriyati |  TASK [Check if user specified in config is installed] **************************
+2020-06-24 23:11:45,281 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:11:45 +0800 (0:00:00.145)       0:00:00.145 ******** 
+2020-06-24 23:11:45,994 p=6528 u=nisafajriyati |  fatal: [default -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "default", "echo ok"], "delta": "0:00:00.267606", "end": "2020-06-24 23:11:45.960956", "msg": "non-zero return code", "rc": 255, "start": "2020-06-24 23:11:45.693350", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-06-24 23:11:45,994 p=6528 u=nisafajriyati |  ...ignoring
+2020-06-24 23:11:46,002 p=6528 u=nisafajriyati |  TASK [Install python2] *********************************************************
+2020-06-24 23:11:46,002 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:11:46 +0800 (0:00:00.721)       0:00:00.867 ******** 
+2020-06-24 23:11:46,023 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:11:47,216 p=6528 u=nisafajriyati |  changed: [default]
+2020-06-24 23:11:47,226 p=6528 u=nisafajriyati |  TASK [Install aptitude] ********************************************************
+2020-06-24 23:11:47,226 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:11:47 +0800 (0:00:01.223)       0:00:02.090 ******** 
+2020-06-24 23:11:47,245 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:11:48,358 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host default should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with 
+prior Ansible releases. A future Ansible release will default to using the 
+discovered platform python for this host. See https://docs.ansible.com/ansible/
+2.8/reference_appendices/interpreter_discovery.html for more information. This 
+feature will be removed in version 2.12. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:11:48,359 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:11:48,367 p=6528 u=nisafajriyati |  TASK [Update all packages] *****************************************************
+2020-06-24 23:11:48,368 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:11:48 +0800 (0:00:01.141)       0:00:03.232 ******** 
+2020-06-24 23:11:48,385 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:15:51,533 p=6528 u=nisafajriyati |  changed: [default]
+2020-06-24 23:15:51,540 p=6528 u=nisafajriyati |  TASK [user : Ensure sudo group is present] *************************************
+2020-06-24 23:15:51,541 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:51 +0800 (0:04:03.172)       0:04:06.405 ******** 
+2020-06-24 23:15:51,558 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:15:52,065 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:52,074 p=6528 u=nisafajriyati |  TASK [user : Ensure sudo group has sudo privileges] ****************************
+2020-06-24 23:15:52,074 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:52 +0800 (0:00:00.533)       0:04:06.939 ******** 
+2020-06-24 23:15:52,093 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:15:52,414 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:52,421 p=6528 u=nisafajriyati |  TASK [user : Add new super user] ***********************************************
+2020-06-24 23:15:52,421 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:52 +0800 (0:00:00.346)       0:04:07.285 ******** 
+2020-06-24 23:15:52,442 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:15:52,851 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:52,859 p=6528 u=nisafajriyati |  TASK [user : Add ssh key for new super user] ***********************************
+2020-06-24 23:15:52,859 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:52 +0800 (0:00:00.438)       0:04:07.723 ******** 
+2020-06-24 23:15:52,907 p=6528 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:15:53,283 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:53,292 p=6528 u=nisafajriyati |  TASK [ssh : Ensure ssh is installed] *******************************************
+2020-06-24 23:15:53,292 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:53 +0800 (0:00:00.432)       0:04:08.156 ******** 
+2020-06-24 23:15:54,060 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:54,067 p=6528 u=nisafajriyati |  TASK [ssh : Disable root login] ************************************************
+2020-06-24 23:15:54,067 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:54 +0800 (0:00:00.774)       0:04:08.931 ******** 
+2020-06-24 23:15:54,253 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:54,260 p=6528 u=nisafajriyati |  TASK [ssh : Disable password authentication] ***********************************
+2020-06-24 23:15:54,260 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:54 +0800 (0:00:00.193)       0:04:09.124 ******** 
+2020-06-24 23:15:54,449 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:54,456 p=6528 u=nisafajriyati |  TASK [ssh : Only allow ssh access for the newly created user] ******************
+2020-06-24 23:15:54,457 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:54 +0800 (0:00:00.196)       0:04:09.321 ******** 
+2020-06-24 23:15:54,641 p=6528 u=nisafajriyati |  ok: [default]
+2020-06-24 23:15:54,643 p=6528 u=nisafajriyati |  PLAY RECAP *********************************************************************
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  default                    : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  Wednesday 24 June 2020  23:15:54 +0800 (0:00:00.187)       0:04:09.508 ******** 
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  =============================================================================== 
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  Update all packages --------------------------------------------------- 243.17s
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  Install python2 --------------------------------------------------------- 1.22s
+2020-06-24 23:15:54,644 p=6528 u=nisafajriyati |  Install aptitude -------------------------------------------------------- 1.14s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  ssh : Ensure ssh is installed ------------------------------------------- 0.77s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  Check if user specified in config is installed -------------------------- 0.72s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  user : Ensure sudo group is present ------------------------------------- 0.53s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  user : Add new super user ----------------------------------------------- 0.44s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  user : Add ssh key for new super user ----------------------------------- 0.43s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  user : Ensure sudo group has sudo privileges ---------------------------- 0.35s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  ssh : Disable password authentication ----------------------------------- 0.20s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  ssh : Disable root login ------------------------------------------------ 0.19s
+2020-06-24 23:15:54,645 p=6528 u=nisafajriyati |  ssh : Only allow ssh access for the newly created user ------------------ 0.19s
+2020-06-24 23:15:57,090 p=6663 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:16:16,366 p=6663 u=nisafajriyati |  ERROR! the role 'oefenweb.swapfile' was not found in /Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/roles:/Users/nisafajriyati/.ansible/roles:/etc/ansible/roles:/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA
+
+The error appears to be in '/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/setup.yml': line 22, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: oefenweb.swapfile
+      ^ here
+
+2020-06-24 15:19:04,648 p=10387 u=vagrant n=ansible | - downloading role 'swapfile', owned by oefenweb
+2020-06-24 15:19:07,690 p=10387 u=vagrant n=ansible | - downloading role from https://github.com/Oefenweb/ansible-swapfile/archive/v2.0.28.tar.gz
+2020-06-24 15:19:11,450 p=10387 u=vagrant n=ansible | - extracting oefenweb.swapfile to /etc/ansible/roles/oefenweb.swapfile
+2020-06-24 15:19:11,451 p=10387 u=vagrant n=ansible | - extracting oefenweb.swapfile to /home/vagrant/.ansible/roles/oefenweb.swapfile
+2020-06-24 15:19:11,455 p=10387 u=vagrant n=ansible | [WARNING]: - oefenweb.swapfile was NOT installed successfully: the specified
+role oefenweb.swapfile appears to already exist. Use --force to replace it.
+
+2020-06-24 15:19:11,456 p=10387 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 15:20:04,380 p=10627 u=vagrant n=ansible | - downloading role 'swapfile', owned by oefenweb
+2020-06-24 15:20:07,573 p=10627 u=vagrant n=ansible | - downloading role from https://github.com/Oefenweb/ansible-swapfile/archive/v2.0.28.tar.gz
+2020-06-24 15:20:08,711 p=10627 u=vagrant n=ansible | - extracting oefenweb.swapfile to /etc/ansible/roles/oefenweb.swapfile
+2020-06-24 15:20:08,712 p=10627 u=vagrant n=ansible | - extracting oefenweb.swapfile to /home/vagrant/.ansible/roles/oefenweb.swapfile
+2020-06-24 15:20:08,714 p=10627 u=vagrant n=ansible | [WARNING]: - oefenweb.swapfile was NOT installed successfully: the specified
+role oefenweb.swapfile appears to already exist. Use --force to replace it.
+
+2020-06-24 15:20:08,715 p=10627 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 15:21:03,540 p=10889 u=vagrant n=ansible | - downloading role 'composer', owned by geerlingguy
+2020-06-24 15:21:07,298 p=10889 u=vagrant n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-composer/archive/1.7.6.tar.gz
+2020-06-24 15:21:08,862 p=10889 u=vagrant n=ansible | - extracting geerlingguy.composer to /etc/ansible/roles/geerlingguy.composer
+2020-06-24 15:21:08,863 p=10889 u=vagrant n=ansible | - extracting geerlingguy.composer to /home/vagrant/.ansible/roles/geerlingguy.composer
+2020-06-24 15:21:08,866 p=10889 u=vagrant n=ansible | [WARNING]: - geerlingguy.composer was NOT installed successfully: the specified
+role geerlingguy.composer appears to already exist. Use --force to replace it.
+
+2020-06-24 15:21:08,867 p=10889 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 23:23:33,515 p=6850 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:23:36,276 p=6850 u=nisafajriyati |  ERROR! the role 'oefenweb.swapfile' was not found in /Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/roles:/Users/nisafajriyati/.ansible/roles:/etc/ansible/roles:/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA
+
+The error appears to be in '/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/setup.yml': line 22, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: oefenweb.swapfile
+      ^ here
+
+2020-06-24 15:25:32,981 p=11147 u=vagrant n=ansible | - downloading role 'composer', owned by geerlingguy
+2020-06-24 15:25:39,705 p=11147 u=vagrant n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-composer/archive/1.7.6.tar.gz
+2020-06-24 15:25:42,781 p=11147 u=vagrant n=ansible | - extracting geerlingguy.composer to /etc/ansible/roles/geerlingguy.composer
+2020-06-24 15:25:42,782 p=11147 u=vagrant n=ansible | - extracting geerlingguy.composer to /home/vagrant/.ansible/roles/geerlingguy.composer
+2020-06-24 15:25:42,783 p=11147 u=vagrant n=ansible | [WARNING]: - geerlingguy.composer was NOT installed successfully: the specified
+role geerlingguy.composer appears to already exist. Use --force to replace it.
+
+2020-06-24 15:25:42,785 p=11147 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-24 23:28:13,399 p=6938 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-24 23:28:16,558 p=6938 u=nisafajriyati |  ERROR! the role 'oefenweb.swapfile' was not found in /Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/roles:/Users/nisafajriyati/.ansible/roles:/etc/ansible/roles:/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA
+
+The error appears to be in '/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/setup.yml': line 22, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: oefenweb.swapfile
+      ^ here
+
+2020-06-25 22:07:29,541 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:07:34,494 p=7632 u=nisafajriyati |  PLAY [all] *********************************************************************
+2020-06-25 22:07:34,534 p=7632 u=nisafajriyati |  TASK [Check if user specified in config is installed] **************************
+2020-06-25 22:07:34,534 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:07:34 +0800 (0:00:00.164)       0:00:00.164 ********* 
+2020-06-25 22:07:36,145 p=7632 u=nisafajriyati |  fatal: [default -> localhost]: FAILED! => {"changed": false, "cmd": ["ssh", "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=3", "default", "echo ok"], "delta": "0:00:00.501653", "end": "2020-06-25 22:07:36.110104", "msg": "non-zero return code", "rc": 255, "start": "2020-06-25 22:07:35.608451", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-06-25 22:07:36,146 p=7632 u=nisafajriyati |  ...ignoring
+2020-06-25 22:07:36,154 p=7632 u=nisafajriyati |  TASK [Install python2] *********************************************************
+2020-06-25 22:07:36,154 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:07:36 +0800 (0:00:01.620)       0:00:01.784 ********* 
+2020-06-25 22:07:36,171 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:07:37,363 p=7632 u=nisafajriyati |  changed: [default]
+2020-06-25 22:07:37,369 p=7632 u=nisafajriyati |  TASK [Install aptitude] ********************************************************
+2020-06-25 22:07:37,370 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:07:37 +0800 (0:00:01.215)       0:00:02.999 ********* 
+2020-06-25 22:07:37,388 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:07:38,606 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host default should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with 
+prior Ansible releases. A future Ansible release will default to using the 
+discovered platform python for this host. See https://docs.ansible.com/ansible/
+2.8/reference_appendices/interpreter_discovery.html for more information. This 
+feature will be removed in version 2.12. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:07:38,606 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:07:38,614 p=7632 u=nisafajriyati |  TASK [Update all packages] *****************************************************
+2020-06-25 22:07:38,614 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:07:38 +0800 (0:00:01.244)       0:00:04.244 ********* 
+2020-06-25 22:07:38,636 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:09:36,416 p=7632 u=nisafajriyati |  changed: [default]
+2020-06-25 22:09:36,431 p=7632 u=nisafajriyati |  TASK [user : Ensure sudo group is present] *************************************
+2020-06-25 22:09:36,431 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:36 +0800 (0:01:57.816)       0:02:02.060 ********* 
+2020-06-25 22:09:36,454 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:09:37,026 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:37,037 p=7632 u=nisafajriyati |  TASK [user : Ensure sudo group has sudo privileges] ****************************
+2020-06-25 22:09:37,037 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:37 +0800 (0:00:00.606)       0:02:02.666 ********* 
+2020-06-25 22:09:37,061 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:09:37,419 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:37,428 p=7632 u=nisafajriyati |  TASK [user : Add new super user] ***********************************************
+2020-06-25 22:09:37,429 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:37 +0800 (0:00:00.391)       0:02:03.058 ********* 
+2020-06-25 22:09:37,458 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:09:37,900 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:37,909 p=7632 u=nisafajriyati |  TASK [user : Add ssh key for new super user] ***********************************
+2020-06-25 22:09:37,909 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:37 +0800 (0:00:00.480)       0:02:03.538 ********* 
+2020-06-25 22:09:37,962 p=7632 u=nisafajriyati |  [DEPRECATION WARNING]: Using tests as filters is deprecated. Instead of using 
+`result|success` use `result is success`. This feature will be removed in 
+version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:09:38,385 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:38,395 p=7632 u=nisafajriyati |  TASK [ssh : Ensure ssh is installed] *******************************************
+2020-06-25 22:09:38,395 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:38 +0800 (0:00:00.486)       0:02:04.024 ********* 
+2020-06-25 22:09:39,267 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:39,276 p=7632 u=nisafajriyati |  TASK [ssh : Disable root login] ************************************************
+2020-06-25 22:09:39,277 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:39 +0800 (0:00:00.881)       0:02:04.906 ********* 
+2020-06-25 22:09:39,504 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:39,512 p=7632 u=nisafajriyati |  TASK [ssh : Disable password authentication] ***********************************
+2020-06-25 22:09:39,513 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:39 +0800 (0:00:00.235)       0:02:05.142 ********* 
+2020-06-25 22:09:39,742 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:39,748 p=7632 u=nisafajriyati |  TASK [ssh : Only allow ssh access for the newly created user] ******************
+2020-06-25 22:09:39,749 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:39 +0800 (0:00:00.235)       0:02:05.378 ********* 
+2020-06-25 22:09:39,974 p=7632 u=nisafajriyati |  ok: [default]
+2020-06-25 22:09:39,977 p=7632 u=nisafajriyati |  PLAY RECAP *********************************************************************
+2020-06-25 22:09:39,977 p=7632 u=nisafajriyati |  default                    : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2020-06-25 22:09:39,977 p=7632 u=nisafajriyati |  Thursday 25 June 2020  22:09:39 +0800 (0:00:00.228)       0:02:05.607 ********* 
+2020-06-25 22:09:39,977 p=7632 u=nisafajriyati |  =============================================================================== 
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  Update all packages --------------------------------------------------- 117.82s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  Check if user specified in config is installed -------------------------- 1.62s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  Install aptitude -------------------------------------------------------- 1.24s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  Install python2 --------------------------------------------------------- 1.22s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  ssh : Ensure ssh is installed ------------------------------------------- 0.88s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  user : Ensure sudo group is present ------------------------------------- 0.61s
+2020-06-25 22:09:39,978 p=7632 u=nisafajriyati |  user : Add ssh key for new super user ----------------------------------- 0.49s
+2020-06-25 22:09:39,979 p=7632 u=nisafajriyati |  user : Add new super user ----------------------------------------------- 0.48s
+2020-06-25 22:09:39,979 p=7632 u=nisafajriyati |  user : Ensure sudo group has sudo privileges ---------------------------- 0.39s
+2020-06-25 22:09:39,979 p=7632 u=nisafajriyati |  ssh : Disable root login ------------------------------------------------ 0.24s
+2020-06-25 22:09:39,979 p=7632 u=nisafajriyati |  ssh : Disable password authentication ----------------------------------- 0.24s
+2020-06-25 22:09:39,979 p=7632 u=nisafajriyati |  ssh : Only allow ssh access for the newly created user ------------------ 0.23s
+2020-06-25 14:09:41,809 p=9860 u=vagrant n=ansible | - downloading role 'composer', owned by geerlingguy
+2020-06-25 14:09:45,905 p=9860 u=vagrant n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-composer/archive/1.7.6.tar.gz
+2020-06-25 14:09:47,141 p=9860 u=vagrant n=ansible | - extracting geerlingguy.composer to /etc/ansible/roles/geerlingguy.composer
+2020-06-25 14:09:47,142 p=9860 u=vagrant n=ansible | - extracting geerlingguy.composer to /home/vagrant/.ansible/roles/geerlingguy.composer
+2020-06-25 14:09:47,145 p=9860 u=vagrant n=ansible | [WARNING]: - geerlingguy.composer was NOT installed successfully: the specified
+role geerlingguy.composer appears to already exist. Use --force to replace it.
+
+2020-06-25 14:09:47,147 p=9860 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-25 14:11:02,947 p=10116 u=vagrant n=ansible | - downloading role 'composer', owned by geerlingguy
+2020-06-25 14:11:08,813 p=10116 u=vagrant n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-composer/archive/1.7.6.tar.gz
+2020-06-25 14:11:09,718 p=10116 u=vagrant n=ansible | - extracting geerlingguy.composer to /etc/ansible/roles/geerlingguy.composer
+2020-06-25 14:11:09,719 p=10116 u=vagrant n=ansible | - extracting geerlingguy.composer to /home/vagrant/.ansible/roles/geerlingguy.composer
+2020-06-25 14:11:09,720 p=10116 u=vagrant n=ansible | [WARNING]: - geerlingguy.composer was NOT installed successfully: the specified
+role geerlingguy.composer appears to already exist. Use --force to replace it.
+
+2020-06-25 14:11:09,722 p=10116 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-25 14:11:29,075 p=10368 u=vagrant n=ansible | - downloading role 'swapfile', owned by oefenweb
+2020-06-25 14:11:35,197 p=10368 u=vagrant n=ansible | - downloading role from https://github.com/Oefenweb/ansible-swapfile/archive/v2.0.28.tar.gz
+2020-06-25 14:11:37,685 p=10368 u=vagrant n=ansible | - extracting oefenweb.swapfile to /etc/ansible/roles/oefenweb.swapfile
+2020-06-25 14:11:37,685 p=10368 u=vagrant n=ansible | - extracting oefenweb.swapfile to /home/vagrant/.ansible/roles/oefenweb.swapfile
+2020-06-25 14:11:37,687 p=10368 u=vagrant n=ansible | [WARNING]: - oefenweb.swapfile was NOT installed successfully: the specified
+role oefenweb.swapfile appears to already exist. Use --force to replace it.
+
+2020-06-25 14:11:37,688 p=10368 u=vagrant n=ansible | ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2020-06-25 22:12:39,891 p=7864 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:12:41,666 p=7864 u=nisafajriyati |  - downloading role 'swapfile', owned by oefenweb
+2020-06-25 22:12:46,169 p=7864 u=nisafajriyati |  - downloading role from https://github.com/Oefenweb/ansible-swapfile/archive/v2.0.28.tar.gz
+2020-06-25 22:12:49,143 p=7864 u=nisafajriyati |  - extracting oefenweb.swapfile to /private/etc/ansible/roles/oefenweb.swapfile
+2020-06-25 22:12:49,144 p=7864 u=nisafajriyati |  - extracting oefenweb.swapfile to /Users/nisafajriyati/.ansible/roles/oefenweb.swapfile
+2020-06-25 22:12:49,150 p=7864 u=nisafajriyati |  - oefenweb.swapfile (v2.0.28) was installed successfully
+2020-06-25 22:12:51,089 p=7864 u=nisafajriyati |  - downloading role 'composer', owned by geerlingguy
+2020-06-25 22:13:00,315 p=7864 u=nisafajriyati |  - downloading role from https://github.com/geerlingguy/ansible-role-composer/archive/1.7.6.tar.gz
+2020-06-25 22:13:02,586 p=7864 u=nisafajriyati |  - extracting geerlingguy.composer to /private/etc/ansible/roles/geerlingguy.composer
+2020-06-25 22:13:02,587 p=7864 u=nisafajriyati |  - extracting geerlingguy.composer to /Users/nisafajriyati/.ansible/roles/geerlingguy.composer
+2020-06-25 22:13:02,595 p=7864 u=nisafajriyati |  - geerlingguy.composer (1.7.6) was installed successfully
+2020-06-25 22:13:04,425 p=7864 u=nisafajriyati |  - downloading role 'mysql', owned by geerlingguy
+2020-06-25 22:13:13,098 p=7864 u=nisafajriyati |  - downloading role from https://github.com/geerlingguy/ansible-role-mysql/archive/3.1.0.tar.gz
+2020-06-25 22:13:15,619 p=7864 u=nisafajriyati |  - extracting geerlingguy.mysql to /private/etc/ansible/roles/geerlingguy.mysql
+2020-06-25 22:13:15,619 p=7864 u=nisafajriyati |  - extracting geerlingguy.mysql to /Users/nisafajriyati/.ansible/roles/geerlingguy.mysql
+2020-06-25 22:13:15,635 p=7864 u=nisafajriyati |  - geerlingguy.mysql (3.1.0) was installed successfully
+2020-06-25 22:13:17,068 p=7873 u=nisafajriyati |  [DEPRECATION WARNING]: DEFAULT_ASK_SUDO_PASS option, In favor of Ansible 
+Become, which is a generic framework. See become_ask_pass. , use become 
+instead. This feature will be removed in version 2.9. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-06-25 22:13:25,922 p=7873 u=nisafajriyati |  ERROR! the role 'oefenweb.swapfile' was not found in /Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/roles:/etc/ansible/roles:/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA
+
+The error appears to be in '/Users/nisafajriyati/Documents/College/TA/vm-myits/setup-TA/setup.yml': line 22, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: oefenweb.swapfile
+      ^ here
+

@@ -3,7 +3,7 @@
 - name: Install nginx
   apt:
     pkg: nginx
-    state: installed
+    state: latest
     update_cache: true
   notify:
     - Start nginx
